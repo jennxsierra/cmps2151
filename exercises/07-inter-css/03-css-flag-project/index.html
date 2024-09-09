@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Flag Project</title>
+    <style>
+      /* Write your CSS Code here */
+      /* Red Box */
+      .flag {
+        width: 900px;
+        height: 600px;
+        background-color: #ce1126;
+        position: relative;
+      }
+
+      /* Blue Box */
+      .flag > div {
+        width: 900px;
+        height: 500px;
+        background-color: #002868;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      /* Circle */
+      .flag > div > div {
+        /* Style */
+        width: 450px;
+        height: 450px;
+        background-color: white;
+        border-radius: 50%;
+        background-image: url(assets/Coat_of_arms_of_Belize.png);
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        /* Position */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Text Style */
+      .flag p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 1;
+      }
+
+      /* Bottom Text */
+      .flag p {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      /* Top Text */
+      .flag > p {
+        position: absolute;
+        top: -4%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+
+  <!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+  <body>
+    <div class="flag">
+      <p>The Flag</p>
+      <div>
+        <div>
+          <p>of Belize</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
