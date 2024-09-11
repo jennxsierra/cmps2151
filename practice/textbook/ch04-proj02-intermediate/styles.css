@@ -1,0 +1,155 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+/* layout */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #eeeeee;
+  font-family: Actor, sans-serif;
+}
+
+section {
+  width: 910px;
+  margin: 0 auto;
+}
+
+section#pricing {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.tier {
+  display: inline-block;
+  width: 300px;
+  background-color: white;
+}
+
+.recommended,
+section#confidence {
+  background-color: #2f4f4f;
+  color: white;
+}
+
+section#confidence {
+  margin-top: 35px;
+  padding: 30px 24px 18px 24px;
+}
+
+/* helper classes */
+
+.bold {
+  font-weight: 800;
+}
+
+.price {
+  font-size: 36px;
+}
+
+/* pricing section */
+
+h1 {
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.tier {
+  font-weight: 300;
+}
+
+.tier-name {
+  margin: 0;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.tier-price {
+  padding: 18px 0;
+}
+
+.tier-price.free {
+  background-color: #5bb189;
+}
+
+.tier-price.standard {
+  background-color: #4b0082;
+}
+
+.tier-price.professional {
+  background-color: #ec632a;
+}
+
+ul.tier-details {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.tier-details li {
+  padding: 14px 0;
+}
+
+ul.tier-details li:nth-child(2n) {
+  background-color: rgba(47, 59, 64, 0.25);
+}
+
+/* signup link */
+
+a.tier-sign-up,
+a.tier-sign-up:visited {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 36px 5px 24px;
+  padding: 12px 0;
+  background-color: #3a6ba5;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+a.tier-sign-up:hover {
+  background-color: #437cbf;
+}
+
+/* confidence section */
+
+#confidence h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#confidence p {
+  margin: 0;
+  font-weight: 300;
+}
+
+ul.confidence-points {
+  padding: 0;
+  font-weight: 400;
+  list-style-type: none;
+}
+
+ul.confidence-points li {
+  padding-top: 10px;
+  padding-bottom: 6px;
+  padding-left: 40px;
+  background-image: url(./checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 36px;
+}
+
+#confidence a {
+  font-weight: 600;
+  color: rgb(192, 222, 255);
+  text-decoration: none;
+}
