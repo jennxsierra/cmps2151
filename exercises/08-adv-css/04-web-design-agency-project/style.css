@@ -19,3 +19,82 @@ footer {
   text-align: right;
   color: midnightblue;
 }
+
+/* Desktop View */
+body {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  width: 50%;
+}
+
+.logo {
+  align-self: start;
+}
+
+/* Cards */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  gap: 50px;
+}
+
+.tile-image {
+  object-fit: contain;
+  width: 300px;
+  height: auto;
+}
+
+.card-text {
+  width: 300px;
+}
+
+.highlight {
+  color: #171462;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  body {
+    margin: 50px 20px 0px 20px;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 4.5rem;
+    text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .tile-image,
+  .card-text {
+    width: 100%;
+  }
+}
