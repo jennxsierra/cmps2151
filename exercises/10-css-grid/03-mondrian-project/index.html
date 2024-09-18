@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /*
+                Write your CSS here
+                Gap Colour: #000
+                White: #F0F1EC
+                Red: #E72F24
+                Black: #232629
+                Blue: #004592
+                Yellow: #F9D01E
+
+                For dimensions, see dimensions.png image.
+                HINT: Remember you can't change the properties of grid lines.
+                But grid lines are transparent!
+                */
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 748px;
+        height: 756px;
+        display: grid;
+        background-color: black;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 140px 155px 20px;
+        gap: 9px;
+      }
+
+      .box {
+        background-color: #f0f1ec;
+      }
+
+      .red {
+        background-color: #e72f24;
+      }
+
+      .white1 {
+        grid-column: span 3;
+      }
+
+      .white2 {
+        grid-row: span 2;
+      }
+
+      .white3 {
+        grid-area: 2 / 2 / 4 / 4;
+      }
+
+      .blue {
+        background-color: #004592;
+        border-bottom: 10px solid black;
+      }
+
+      .white4 {
+        grid-row: span 2;
+        background-color: #f0f1ec;
+      }
+
+      .yellow {
+        background-color: #f9d01e;
+      }
+
+      .black {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="red box"></div>
+      <div class="white1 box"></div>
+      <div class="white2 box"></div>
+      <div class="white3 box"></div>
+      <div class="blue box"></div>
+      <div class="white4 box"></div>
+      <div class="white5 box"></div>
+      <div class="yellow box"></div>
+      <div class="black box"></div>
+    </div>
+  </body>
+</html>
