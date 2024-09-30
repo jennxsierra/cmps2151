@@ -1,0 +1,339 @@
+/*
+Student Name: Jennessa Sierra
+Student ID: 2021153908
+Lab#3 - CSS Layout
+
+Date: Sept.30.24
+FileName: cmps2151_L03.css
+
+*/
+:root {
+  --color-block-1: #7b93db;
+  --color-block-2: #4c63b6;
+  --color-block-3: #2d3a8c;
+  --color-block-4: #ef4e4e;
+
+  --color-text-light: #f5f7fa;
+  --color-text-dark: #3e4c59;
+
+  --color-back: #f5f7fa;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+aside,
+p,
+main,
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--color-text-dark);
+  background-color: var(--color-back);
+}
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+.container {
+  padding: 25px;
+  width: 100%;
+  /*add grid gap
+    /*and display as grid
+	/*add grid template as described
+	/*set grid column repeat 10 columns with 1fr width*/
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 175px 75px 175px 275px;
+  gap: 25px;
+}
+.container > div {
+  background-color: #616e7c;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  /*dsiplay as flex*/
+  display: flex;
+  padding: 1.5em;
+  box-shadow: 2px 2px 2px 2px hsla(0, 0%, 75%, 0.2);
+}
+
+/* add your styles */
+main div.a {
+  background-color: var(--color-block-1);
+}
+main div.b {
+  background-color: var(--color-block-2);
+}
+main div.c {
+  background-color: var(--color-block-3);
+}
+
+/*Class for withDouble, set grid column span 2*/
+.widthDouble {
+  grid-column: span 2;
+}
+
+/*Class for widthfour, set grid column span 4*/
+.widthFour {
+  grid-column: span 4;
+}
+
+/*Class for heightDouble, set grid row span 2*/
+.heightDouble {
+  grid-row: span 2;
+}
+
+/*Class for reverse, set color to use var (color-text-light)*/
+.reverse {
+  color: var(--color-text-light);
+}
+
+/*Class for centered, align items center and justify content center*/
+.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+/*Class for largeIcon set font size to 1.1em*/
+.largeIcon {
+  font-size: 1.1em;
+}
+
+/*set h2 to 4em font size, with 2px letter spacing and font weight of 700*/
+h2 {
+  font-size: 4em;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/*set h3 to 1.6em font size*/
+h3 {
+  font-size: 1.6em;
+}
+
+/*set h4 to 1.4em font size and 1px letter spacing*/
+h4 {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+/*create rule for button with 1.1em font size, 
+0 border, 3px border radius, block display, 0.5em padding
+100% width, background color to use var (--color-block-4), and color text var(--color-text-light)*/
+button {
+  font-size: 1.1em;
+  border: 0;
+  border-radius: 3px;
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  background-color: var(--color-block-4);
+  color: var(--color-text-light);
+}
+
+/*Set no-repeat for background repeat, set background size to cover and align items to flex-end
+for ids b, c, e, f, h, l, m, o and p*/
+#b,
+#c,
+#e,
+#f,
+#h,
+#l,
+#m,
+#o,
+#p {
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: flex-end;
+}
+
+/*set background-color to white for id a, g, n*/
+#a,
+#g,
+#n {
+  color: black;
+  background-color: white;
+}
+
+/*id i, j, k should have 0 padding*/
+#i,
+#j,
+#k {
+  padding: 0;
+}
+
+/*create individual rule to load background-image for each id with respective images, except those
+already loaded via html, set background-position to either top, center or bottom: 
+b(center), c, e(bottom, 0 padding), f(top), h(center), l(center), m, o(center), p(bottom) and 
+q(white background-color, 0 padding, flex display, flex direction set to row, no-repeat and background-size: contain.*/
+#b {
+  background-image: url("./images/b.jpg");
+  background-position: center;
+}
+
+#c {
+  background-image: url("./images/c.jpg");
+}
+
+#e {
+  background-image: url("./images/e.jpg");
+  background-position: bottom;
+  padding: 0;
+}
+
+#f {
+  background-image: url("./images/f.jpg");
+  background-position: top;
+}
+
+#h {
+  background-image: url("./images/h.jpg");
+  background-position: center;
+}
+
+#l {
+  background-image: url("./images/l.jpg");
+  background-position: center;
+}
+
+#m {
+  background-image: url("./images/m.jpg");
+}
+
+#o {
+  background-image: url("./images/o.jpg");
+  background-position: center;
+}
+
+#p {
+  background-image: url("./images/p.jpg");
+  background-position: bottom;
+}
+
+#q {
+  color: black;
+  background-color: white;
+  background-image: url("./images/q.jpg");
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#a,
+#g,
+#n {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+.card h4,
+.card p {
+  margin: 0.5em;
+}
+.card-vertical img {
+  max-height: 100%;
+  width: auto;
+}
+.card-vertical .card-content {
+  padding: 1em 3px 0 150px;
+}
+.card-vertical p {
+  margin-top: 1em;
+}
+
+/* Create styles for mobile protrait screen 
+add media query for only screen and max-width of 850px, this query should do the following:
+
+create rule to set divs inside the container to 0.5em padding
+
+set container class to 100% width add a 
+grid-template-rows: 275px repeat(3, auto) 50px repeat(2, 300px) repeat(3, 75px) repeat(4, auto) 
+and grid-template-columns to 1fr
+
+set widthDouble class to grid-column: 1
+set widthFour class to grid-column: 1
+set heightDouble class to grid-row: 1
+
+card-vertical and card-content class should have a padding of 0.5em, 3px, 3px and 4em
+
+*/
+@media only screen and (max-width: 850px) {
+  .container > div {
+    padding: 0.5em;
+  }
+
+  .container {
+    width: 100%;
+    grid-template-rows:
+      275px repeat(3, auto) 50px repeat(2, 300px) repeat(3, 75px)
+      repeat(4, auto);
+    grid-template-columns: 1fr;
+  }
+
+  .widthDouble {
+    grid-column: 1;
+  }
+
+  .widthFour {
+    grid-column: 1;
+  }
+
+  .heightDouble {
+    grid-row: 1;
+  }
+
+  .card-vertical,
+  .card-content {
+    padding: 0.5em 3px 3px 4em;
+  }
+}
+
+/* Create styles for tablet portrait and mobile landscape screens 
+add media query only for screen and max-width 1100px
+
+set font size for h2 to 3em, h3 to 1.3em, h4 to 1.15em and p to 0.9em
+
+*/
+@media only screen and (max-width: 1100px) {
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.3em;
+  }
+  h4 {
+    font-size: 1.15em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
