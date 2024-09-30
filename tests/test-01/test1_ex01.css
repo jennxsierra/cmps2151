@@ -1,0 +1,108 @@
+/*
+NAME: Jennessa Sierra
+SECTION 2
+CMPS2151 - WEB DEV
+TEST #1 - Exercise01
+SEPT.25.24
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  color: white;
+}
+header h2 {
+  font-size: 36px;
+  margin: 0.5em 0 0 0.5em;
+}
+header nav {
+  font-size: 48px;
+  margin: 0.5em 0.5em 0 0;
+}
+
+main form {
+  width: 40em;
+  height: 80vh;
+  color: white;
+}
+main label {
+  display: inline-block;
+  height: 1.75em;
+  padding: 0.25em 0.25em;
+  font-size: 32px;
+  background-color: teal;
+}
+input[type="search"],
+input[type="submit"] {
+  display: inline-block;
+  height: 3.5em;
+  padding: 0.25em;
+  font-size: 18px;
+}
+input[type="submit"] {
+  color: white;
+  background-color: #da127d;
+  border: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  background: rgb(226, 228, 20);
+  background: radial-gradient(
+    circle,
+    rgb(168, 27, 161) 0%,
+    rgba(180, 164, 19, 0.983) 42%,
+    rgb(97, 182, 94) 100%
+  );
+}
+
+/*  Add your CSS styles here for Exercise 01 */
+body {
+  background-image: url("./images/P6120375.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  flex: 1fr 1fr auto;
+}
+
+form label {
+  flex-basis: 16em;
+}
+
+form input[type="search"] {
+  flex-basis: 36em;
+}
+
+form input[type="submit"] {
+  flex-basis: 10em;
+}

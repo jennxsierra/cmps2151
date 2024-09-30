@@ -1,0 +1,82 @@
+/*DO NOT EDIT*/
+:root {
+  /* Primary: Indigo, Orange (Vivid)   */
+  --color-primary-1-050: #e0e8f9;
+  --color-primary-1-100: #bed0f7;
+  --color-primary-1-200: #98aeeb;
+  --color-primary-1-300: #7b93db;
+  --color-primary-1-400: #647acb;
+  --color-primary-1-500: #4c63b6;
+  --color-primary-1-600: #4055a8;
+  --color-primary-1-700: #35469c;
+  --color-primary-1-800: #2d3a8c;
+  --color-primary-1-900: #19216c;
+
+  --color-primary-2-050: #ffe8d9;
+  --color-primary-2-100: #ffd0b5;
+  --color-primary-2-200: #ffb088;
+  --color-primary-2-300: #ff9466;
+  --color-primary-2-400: #f9703e;
+  --color-primary-2-500: #f35627;
+  --color-primary-2-600: #de3a11;
+  --color-primary-2-700: #c52707;
+  --color-primary-2-800: #ad1d07;
+  --color-primary-2-900: #841003;
+
+  /* neutral: cool grey */
+  --color-neutral-050: #f5f7fa;
+  --color-neutral-100: #e4e7eb;
+  --color-neutral-200: #cbd2d9;
+  --color-neutral-300: #9aa5b1;
+  --color-neutral-400: #7b8794;
+  --color-neutral-500: #616e7c;
+  --color-neutral-600: #52606d;
+  --color-neutral-700: #3e4c59;
+  --color-neutral-800: #323f4b;
+  --color-neutral-900: #1f2933;
+
+  /* Supporting: Magenta, Red, Yellow, Green  */
+  --color-support-1-050: #fdebff;
+  --color-support-1-100: #f8c4fe;
+  --color-support-1-200: #f48fff;
+  --color-support-1-300: #f368fc;
+  --color-support-1-400: #ed47ed;
+  --color-support-1-500: #e019d0;
+  --color-support-1-600: #cb10b8;
+  --color-support-1-700: #b30ba3;
+  --color-support-1-800: #960888;
+  --color-support-1-900: #6e0560;
+
+  --color-support-2-050: #ffe3e3;
+  --color-support-2-100: #ffbdbd;
+  --color-support-2-200: #ff9b9b;
+  --color-support-2-300: #f86a6a;
+  --color-support-2-400: #ef4e4e;
+  --color-support-2-500: #e12d39;
+  --color-support-2-600: #cf1124;
+  --color-support-2-700: #ab091e;
+  --color-support-2-800: #8a041a;
+  --color-support-2-900: #610316;
+
+  --color-support-3-050: #fffbea;
+  --color-support-3-100: #fff3c4;
+  --color-support-3-200: #fce588;
+  --color-support-3-300: #fadb5f;
+  --color-support-3-400: #f7c948;
+  --color-support-3-500: #f0b429;
+  --color-support-3-600: #de911d;
+  --color-support-3-700: #cb6e17;
+  --color-support-3-800: #b44d12;
+  --color-support-3-900: #8d2b0b;
+
+  --color-support-4-050: #e3f9e5;
+  --color-support-4-100: #c1f2c7;
+  --color-support-4-200: #91e697;
+  --color-support-4-300: #51ca58;
+  --color-support-4-400: #31b237;
+  --color-support-4-500: #18981d;
+  --color-support-4-600: #0f8613;
+  --color-support-4-700: #0e7817;
+  --color-support-4-800: #07600e;
+  --color-support-4-900: #014807;
+}
