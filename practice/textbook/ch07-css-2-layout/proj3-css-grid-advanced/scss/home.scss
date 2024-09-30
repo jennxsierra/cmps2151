@@ -1,0 +1,20 @@
+@use "base.scss";
+@use "components.scss";
+
+$layout-gap: 1em;
+
+// highlights
+.highlight {
+  background-color: rgb(131, 191, 255);
+  padding: 20px;
+  text-align: center;
+}
+
+// top performers
+.matrix {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: $layout-gap;
+  padding: 0 50px;
+}

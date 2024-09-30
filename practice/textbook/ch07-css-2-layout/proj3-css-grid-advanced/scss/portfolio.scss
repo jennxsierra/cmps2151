@@ -1,0 +1,37 @@
+@use "base.scss";
+@use "components.scss";
+
+$layout-gap: 1em;
+
+// side bar
+.sidebar {
+  display: grid;
+  gap: $layout-gap;
+}
+
+// table
+.portfolio {
+  min-width: 75%;
+  text-align: start;
+
+  tr {
+    border-bottom: 2px solid rgb(233, 233, 233);
+  }
+
+  th,
+  td {
+    padding: 6px 0;
+  }
+}
+
+.portfolio button {
+  margin: 0 15px;
+  padding: 8px;
+  background-color: rgb(51, 149, 255);
+  border: none;
+  color: white;
+}
+
+.portfolio button:hover {
+  background-color: rgb(16, 96, 182);
+}

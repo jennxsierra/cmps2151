@@ -1,0 +1,114 @@
+// main grid
+$layout-gap: 1em;
+$header-footer-color: rgb(53, 61, 92);
+$aside-color: rgb(0, 80, 192);
+
+.container {
+  display: grid;
+  gap: $layout-gap;
+  grid-template-columns: 100px auto;
+}
+
+main {
+  display: grid;
+  gap: $layout-gap;
+  grid-template-columns: repeat(6, minmax(150px, 250px));
+  height: 100%;
+}
+
+// dashboard
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 2;
+  height: 65px;
+  padding: 0 20px;
+  background-color: $header-footer-color;
+  color: white;
+}
+
+.dashboard > div {
+  display: flex;
+  gap: $layout-gap;
+}
+
+.dashboard img {
+  opacity: 35%;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+// menu aside bar
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: $layout-gap;
+  background-color: $aside-color;
+  color: white;
+}
+
+.menu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; // for portfolio link;
+}
+
+.menu img {
+  opacity: 35%;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.menu a:link,
+.menu a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover img {
+  opacity: 65%;
+}
+
+// footer
+footer {
+  grid-column: span 6;
+  padding: 20px 15px;
+  background-color: $header-footer-color;
+  color: white;
+}
+
+// widgets
+.widget {
+  background-color: white;
+  text-align: center;
+}
+
+.widget-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget h3 {
+  padding: 10px;
+  border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+// utility classes
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-4 {
+  grid-column: span 4;
+}
+
+.right {
+  text-align: right;
+}

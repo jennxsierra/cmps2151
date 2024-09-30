@@ -1,0 +1,122 @@
+:root {
+  --color-primary: #ff6e40;
+  --color-back-light: #eceff1;
+  --color-back-dark: #37474f;
+  --spacer-base: 1em;
+  --card-font-size: 90%;
+  --header-font-size: 32px;
+  --header-height: 8em;
+}
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1em;
+  background-color: var(--color-back-light);
+}
+header {
+  padding: 0 var(--spacer-base);
+  background-color: var(--color-back-dark);
+  height: var(--header-height);
+}
+header h1 {
+  margin: 0;
+  font-size: var(--header-font-size);
+  color: white;
+}
+header h1 span {
+  color: var(--color-primary);
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.card {
+  background: white;
+  margin-bottom: 2em;
+  padding: 0;
+}
+.card-content p {
+  padding: 0.5em 1.4em 0 1.4em;
+  font-size: var(--card-font-size);
+}
+.card-actions {
+  padding: 0.5em 1.4em;
+  font-size: var(--card-font-size);
+}
+
+/* add your styles here */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 24%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px rgb(178, 178, 178);
+}
+
+.card img:hover {
+  filter: saturate(150%);
+}
+
+.card button {
+  opacity: 0;
+}
+
+.card:hover button {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* styles for mobile protrait screen */
+@media (max-width: 480px) and (orientation: portrait) {
+  .card {
+    width: 100%;
+  }
+
+  :root {
+    --card-font-size: 100%;
+    --header-font-size: 24px;
+    --header-height: 4em;
+  }
+}
+
+/* styles for tablet portrait and mobile landscape screens */
+@media (min-width: 481px) and (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+
+  :root {
+    --card-font-size: 100%;
+    --header-height: 5em;
+  }
+}

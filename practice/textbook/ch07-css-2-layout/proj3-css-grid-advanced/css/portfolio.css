@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* neutral: grey */
+/* font stack */
+/* font scale increases by 1.125 */
+/* box shadows */
+/* sizing */
+/* use box-sizing everywhere */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* now do a reset */
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+aside,
+p,
+main,
+nav,
+ul,
+li,
+fieldset,
+form,
+figure,
+figcaption,
+header,
+footer,
+nav,
+section,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* now set up base styling */
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.65;
+  background-color: #d9e2ec;
+  color: #102a43;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 1.953em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.563em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.container {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 100px auto;
+}
+
+main {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(6, minmax(150px, 250px));
+  height: 100%;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 2;
+  height: 65px;
+  padding: 0 20px;
+  background-color: rgb(53, 61, 92);
+  color: white;
+}
+
+.dashboard > div {
+  display: flex;
+  gap: 1em;
+}
+
+.dashboard img {
+  opacity: 35%;
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  background-color: rgb(0, 80, 192);
+  color: white;
+}
+
+.menu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu img {
+  opacity: 35%;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.menu a:link,
+.menu a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover img {
+  opacity: 65%;
+}
+
+footer {
+  grid-column: span 6;
+  padding: 20px 15px;
+  background-color: rgb(53, 61, 92);
+  color: white;
+}
+
+.widget {
+  background-color: white;
+  text-align: center;
+}
+
+.widget-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.widget h3 {
+  padding: 10px;
+  border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.col-span-4 {
+  grid-column: span 4;
+}
+
+.right {
+  text-align: right;
+}
+
+.sidebar {
+  display: grid;
+  gap: 1em;
+}
+
+.portfolio {
+  min-width: 75%;
+  text-align: start;
+}
+.portfolio tr {
+  border-bottom: 2px solid rgb(233, 233, 233);
+}
+.portfolio th,
+.portfolio td {
+  padding: 6px 0;
+}
+
+.portfolio button {
+  margin: 0 15px;
+  padding: 8px;
+  background-color: rgb(51, 149, 255);
+  border: none;
+  color: white;
+}
+
+.portfolio button:hover {
+  background-color: rgb(16, 96, 182);
+}
+
+/*# sourceMappingURL=portfolio.css.map */

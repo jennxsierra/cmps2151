@@ -1,0 +1,261 @@
+:root {
+  --color-block-1: #7b93db;
+  --color-block-2: #4c63b6;
+  --color-block-3: #2d3a8c;
+  --color-block-4: #ef4e4e;
+
+  --color-text-light: #f5f7fa;
+  --color-text-dark: #3e4c59;
+
+  --color-back: #f5f7fa;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+aside,
+p,
+main,
+nav,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--color-text-dark);
+  background-color: var(--color-back);
+}
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+.container {
+  padding: 25px;
+  width: 100%;
+}
+.container > div {
+  background-color: #616e7c;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  padding: 1.5em;
+  box-shadow: 2px 2px 2px 2px hsla(0, 0%, 75%, 0.2);
+}
+
+/* add your styles */
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 175px 75px 175px 275px;
+  gap: 25px;
+}
+
+.widthDouble {
+  grid-column: span 2;
+}
+
+.widthQuadruple {
+  grid-column: span 4;
+}
+
+.heightDouble {
+  grid-row: span 2;
+}
+
+/* for all grid items */
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* background images */
+#b,
+#c,
+#e,
+#f,
+#h,
+#l,
+#m,
+#o,
+#p,
+#q {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#b {
+  background-image: url(./images/b.jpg);
+}
+
+#c {
+  background-image: url(./images/c.jpg);
+}
+
+#e {
+  background-image: url(./images/e.jpg);
+}
+
+#f {
+  background-image: url(./images/f.jpg);
+}
+
+#h {
+  background-image: url(./images/h.jpg);
+}
+
+#l {
+  background-image: url(./images/l.jpg);
+}
+
+#m {
+  background-image: url(./images/m.jpg);
+}
+
+#o {
+  background-image: url(./images/o.jpg);
+}
+
+#p {
+  background-image: url(./images/p.jpg);
+}
+
+#q {
+  background-image: url(./images/q.jpg);
+  background-size: initial;
+  background-position: left;
+}
+
+/* background colors */
+#d,
+#i,
+#j,
+#k {
+  background-color: navy;
+}
+.card-button {
+  border: none;
+  border-radius: 3px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+.card-button:hover {
+  background-color: rgb(255, 65, 65);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* grid items with images */
+.container img {
+  width: 100%;
+}
+
+.container > div.white-card {
+  padding: 0;
+  background-color: white;
+  color: black;
+  justify-content: start;
+}
+
+.description {
+  padding: 10px;
+  align-self: start;
+}
+
+.description h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.container .image-text {
+  justify-content: end;
+  align-items: start;
+}
+
+/* title */
+h1 {
+  font-size: 4em;
+}
+
+/* misc adjustments */
+.container > div.white-card.left-description {
+  align-items: start;
+  padding-left: 140px;
+}
+
+/* styles for mobile protrait screen */
+@media (max-width: 850px) {
+  body {
+    font-size: 0.6rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px; /* Reduced gap for mobile */
+    padding: 10px; /* Added padding for better spacing */
+  }
+
+  .widthDouble,
+  .widthQuadruple,
+  .heightDouble {
+    grid-column: span 1; /* Ensure all items span 1 column */
+    grid-row: span 1;
+  }
+
+  /* reorder */
+
+  #h {
+    order: -3;
+  }
+
+  #d,
+  #k {
+    order: -2;
+  }
+
+  #i,
+  #j {
+    order: -1;
+  }
+}
+
+/* styles for tablet portrait and mobile landscape screens */
+@media (min-width: 851px) and (max-width: 1100px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
