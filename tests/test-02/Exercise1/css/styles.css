@@ -1,0 +1,52 @@
+/* 	CMPS2151 - Test#2 - Web Development
+    Student Name: Jennessa Sierra
+    Exercise 1: Dice Game
+	  Date: October 28, 2024
+	  Filename: styles.css*/
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+body {
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #4ecca3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  font-family: "Monaco", fantasy;
+  text-align: center;
+  color: white;
+  background: rgb(204, 20, 228);
+  background: radial-gradient(
+    circle,
+    rgb(233, 13, 5) 0%,
+    rgba(52, 68, 139, 0.983) 42%,
+    rgb(250, 6, 250) 100%
+  );
+}

@@ -1,0 +1,107 @@
+/* 	CMPS2151 - Test#2 - Web Development
+    Student Name: Jennessa Sierra
+    Exercise 2: Traffic Light
+	  Date: October 28, 2024 */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+#lightbox {
+  flex-direction: column;
+  grid-gap: 5px 5px;
+  grid-template-rows: 33% 33% 33%;
+  padding: 5px;
+  border: 7px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  height: 200px;
+  width: 70px;
+  margin: 0px auto 0px auto;
+}
+
+.light {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 10px;
+}
+
+.lightpost {
+  flex-direction: column;
+  height: 150px;
+  width: 20px;
+  position: relative;
+  background: rgb(0, 0, 0);
+  margin: 0px auto 0px auto;
+}
+
+.button-container {
+  flex-direction: column;
+  grid-gap: 5px 5px;
+  grid-template-rows: 33% 33% 33%;
+  padding: 5px;
+  width: 53px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background: rgb(256, 256, 256);
+  margin: 0px auto 0px auto;
+}
+
+.button-item {
+  margin: 2px 0px 2px 0px;
+  flex-direction: column;
+}
+
+.button-item input {
+  width: 4em;
+}
+
+#base {
+  flex-direction: column;
+  height: 30px;
+  width: 40px;
+  background: rgb(0, 0, 0);
+  margin: -7px auto 0px auto;
+  border: 15px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.blink {
+  animation: blinkingRed 2s infinite;
+}
+
+@keyframes blinkingRed {
+  0% {
+    background: red;
+  }
+
+  /*	50% {  add back in to slow the transition from red to white
+   background: red;
+  } */
+
+  100% {
+    background: white;
+  }
+}
+
+footer {
+  margin-top: 5%;
+  font-family: "Indie Flower", fantasy;
+  text-align: center;
+  color: white;
+  background: rgb(204, 20, 228);
+  background: radial-gradient(
+    circle,
+    rgb(233, 13, 5) 0%,
+    rgba(52, 68, 139, 0.983) 42%,
+    rgb(250, 6, 250) 100%
+  );
+}

@@ -1,0 +1,54 @@
+<!-- CMPS2151 - Test#2 - Web Development
+     Student Name: Jennessa Sierra
+     Exercise 2: Traffic Light 
+     Date: October 28, 2024 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CMPS2151 - T2-Ex2 - Stoplight</title>
+    <link rel="stylesheet" type="text/css" href="css/light_style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="lightbox">
+        <div>
+          <div
+            class="light"
+            onmouseover="makeLight('Green')"
+            id="GreenLight"
+          ></div>
+        </div>
+        <div>
+          <div
+            class="light"
+            onmouseover="makeLight('Yellow')"
+            id="YellowLight"
+          ></div>
+        </div>
+        <div>
+          <div class="light" onmouseover="makeLight('Red')" id="RedLight"></div>
+        </div>
+      </div>
+      <div class="lightpost"></div>
+      <div class="button-container">
+        <div class="button-item">
+          <input type="button" onclick="blink()" value="Red" />
+        </div>
+        <div class="button-item">
+          <input type="button" onclick="makeLight('Yellow')" value="Yellow" />
+        </div>
+        <div class="button-item">
+          <input type="button" onclick="makeLight('Green')" value="Green" />
+        </div>
+      </div>
+      <div class="lightpost"></div>
+      <div id="base"></div>
+    </div>
+    <footer>
+      Copyright &copy - CMPS2151 - Web Development - Test 2 - JavaScript, Rev24.
+      MMedina - University of Belize - 10.28.24
+    </footer>
+    <!--Link to script file-->
+    <script src="js/JSEx2.js"></script>
+  </body>
+</html>
