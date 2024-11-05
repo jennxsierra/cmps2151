@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+       In Class Practice 2
+      
+	  Course: CMPS2151 - Web Dev
+      Project to validate a form used for setting up a new account
+      Author: Manuel Medina
+      Date:   11/2/22
+
+      Filename: practice2.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Form Validation - Practice 1.1</title>
+   <link rel="stylesheet" href="practice1_1styles.css" />
+</head>
+
+<body>
+   <header>
+      <h1>
+         In Class Practice  - Validate Account
+      </h1>
+   </header>
+
+   <section>
+      <h1>Create your Account</h1>
+      <form id="signup" name="signup" method="get" action="formsubmit.html">
+         <fieldset>
+            <legend>Enter your Account Information</legend>
+            <label for="user">Username</label>
+            <input type="text" id="user" name="user" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="pwd" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/>
+
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="pwd2" name="pwd2" required  />            
+            
+            <input type="submit" id="submitButton" value="Save" />
+         </fieldset>
+      </form>
+   </section>
+</body>
+</html>

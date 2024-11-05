@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Practice</title>
+    <meta charset="utf-8" />
+    <style>
+      input {
+        display: block;
+        margin-bottom: 1em;
+      }
+      label {
+        float: left;
+        width: 5em;
+        padding-right: 1em;
+        text-align: right;
+      }
+      input[type="submit"] {
+        margin-left: 7em;
+      }
+    </style>
+    <script>
+      // start function validateForm
+      function validateForm() {
+        if (document.forms[0].userName.value == "") {
+          alert("Name field cannot be empty.");
+          return false;
+        } // end if
+
+        if (document.forms[0].userAge.value < 18) {
+          alert("Age is less than 18. You are not an adult.");
+          return false;
+        } // end if
+        alert("Age is valid.");
+        return true;
+      } // end function validateForm
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Form Handling</h1>
+    <form
+      method="post"
+      action="https://webdevbasics.net/scripts/demo.php"
+      onsubmit="return validateForm();"
+    >
+      <label for="userName">Name:</label>
+      <input type="text" name="userName" id="userName" />
+      <label for="userAge">Age:</label>
+      <input type="text" name="userAge" id="userAge" />
+      <input type="submit" value="Send information" />
+    </form>
+  </body>
+</html>
