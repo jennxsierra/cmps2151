@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Form Validation - Practice 1.1</title>
+    <link rel="stylesheet" href="practice1.1styles.css" defer />
+  </head>
+
+  <body>
+    <header>
+      <h1>In Class Practice - Validate Account</h1>
+    </header>
+
+    <section>
+      <h1>Create your Account</h1>
+      <form id="signup" name="signup" method="get" action="formsubmit.html">
+        <fieldset>
+          <legend>Enter your Account Information</legend>
+          <label for="user">Username</label>
+          <input type="text" id="user" name="user" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="pwd">Password</label>
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            required
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+          />
+
+          <label for="confirm">Confirm Password</label>
+          <input type="password" id="pwd2" name="pwd2" required />
+
+          <input type="submit" id="submitButton" value="Save" />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
