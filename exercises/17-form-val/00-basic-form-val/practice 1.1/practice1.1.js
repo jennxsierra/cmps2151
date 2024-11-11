@@ -1,17 +1,18 @@
 "use strict";
 
-const submitButton = document.getElementById("submitButton");
-const pwd = document.getElementById("pwd");
-const pwd2 = document.getElementById("pwd2");
+const submitButton = document.querySelector("#submitButton");
+const pwdField = document.querySelector("#pwd");
+const confirmPwdField = document.querySelector("#pwd2");
+const message = document.querySelector("#message");
 
-submitButton.addEventListener("click", function () {
-  if (pwd.validity.patternMismatch) {
-    pwd.setCustomValidity(
-      "Your password must be at least 8 characters with at least one letter and one number"
+submitButton.addEventListener("click", (e) => {
+  if (pwdField.validity.patternMismatch) {
+    pwdField.setCustomValidity(
+      "Password must contain at least 8 characters and contain at least one number and one letter."
     );
-  } else if (pwd.value !== pwd2.value) {
-    pwd.setCustomValidity("Your passwords must match");
+  } else if (pwdField.value !== confirmPwdField.value) {
+    confirmPwdField.setCustomValidity("Passwords do not match.");
   } else {
-    pwd.setCustomValidity("");
+    pwdField.setCustomValidity("");
   }
 });
