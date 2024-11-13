@@ -1,0 +1,65 @@
+<!--
+CMPS2151 - WEB DEV QUIZ#5
+Exercise #1
+Filename: quiz5.html
+StudentName: Jennessa Sierra
+-->
+<html>
+  <head>
+    <title>Exercise 1 - DOM Manipulation</title>
+  </head>
+  <body>
+    <h1>QUIZ#5: EXERCISE 1 - DOM MANIPULATION</h1>
+
+    <form method="post" action="login.php" id="loginForm">
+      <label class="icon" for="username"
+        ><i class="fa fa-user fa-fw"> </i
+      ></label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="User Name"
+      />
+
+      <label class="icon" for="email"
+        ><i class="fa fa-envelope fa-fw"> </i
+      ></label>
+      <input type="text" name="email" id="email" placeholder="Email" />
+
+      <label class="icon" for="pass"><i class="fa fa-key fa-fw"></i> </label>
+      <input type="password" name="pass" id="pass" placeholder="Password" />
+
+      <label class="icon" for="region"><i class="fa fa-home fa-fw"></i> </label>
+      <input
+        type="radio"
+        name="region"
+        id="europe"
+        value="Europe"
+        class="bigRadio"
+      /><span>Europe</span>
+      <input
+        type="radio"
+        name="region"
+        id="usa"
+        value="United States"
+        class="bigRadio"
+      /><span>United States</span>
+
+      <label class="icon" for="payment">
+        <i class="fa fa-fw" id="payLabel"></i
+      ></label>
+      <select name="payment" id="payment"></select>
+
+      <label class="icon" id="long" for="save">
+        <i class="fa fa-database fa-fw"></i> Remember Me</label
+      >
+      <input type="checkbox" name="save" id="save" class="bigCheckBox" />
+
+      <button type="submit"><i class="fa fa-reply fa-fw"></i> Register</button>
+    </form>
+    <div id="errors" class="hidden"></div>
+
+    <script type="text/javascript" src="../myscript/JennessaSierra.js"></script>
+  </body>
+</html>
