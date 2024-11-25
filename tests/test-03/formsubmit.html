@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      JavaScript 
+      Test#3
+
+      StudentID: 2021153908
+      StudentName: Jennessa Sierra
+      Date: 25/11/2024
+
+      Filename: formsubmit.html
+   -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>TEST#3</title>
+    <link rel="stylesheet" href="t3_styles.css" />
+    <script>
+      window.addEventListener("load", function () {
+        // Retrieve the field/value pairs from the URL
+        var formData = location.search.slice(1);
+        formData = formData.replace(/\+/g, " ");
+        formData = decodeURIComponent(formData);
+        let formFields = formData.split(/[&=]/g);
+
+        // Write the field values to the account table
+        document.getElementById("name").textContent = formFields[1];
+        document.getElementById("username").textContent = formFields[5];
+        document.getElementById("pwd").textContent = formFields[7];
+        document.getElementById("sid").textContent = formFields[3];
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>CMPS2151 - TEST 3</h1>
+    </header>
+
+    <section>
+      <h1>Account Information</h1>
+      <table id="account">
+        <tr>
+          <td>Name</td>
+          <td><span id="name"></span></td>
+        </tr>
+        <tr>
+          <td>UserName</td>
+          <td><span id="username"></span></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><span id="pwd"></span></td>
+        </tr>
+        <tr>
+          <td>Student ID</td>
+          <td><span id="sid"></span></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

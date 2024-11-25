@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      CMPS2151 - Test#3
+      JavaScript
+      
+      StudentID: 2021153908
+      Student Name: Jennessa Sierra
+      Date: 25/11/2024
+
+      Filename: index_t3.html
+   -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Web Dev - Test #3</title>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <link rel="stylesheet" href="t3_styles.css" />
+    <script src="test3.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>CMPS2151 - Test 3 - 2024</h1>
+      <h1>Course Withdraw Form</h1>
+    </header>
+    <!-------------------------------------------------------Section 1-------------------------------------->
+    <section>
+      <h1>Student Login</h1>
+      <form id="signup" name="signup" method="get" action="formsubmit.html">
+        <fieldset id="F1">
+          <legend id="F1L1">Enter your Account Information</legend>
+          <!--Section 1 : Question 1 - Make fields required-->
+          <label for="user">Full Name</label>
+          <input type="text" id="sname" name="name" required />
+
+          <label for="user">Student ID</label>
+          <input type="text" id="sid" name="stuid" required />
+
+          <label for="user">Username</label>
+          <input type="text" id="user" name="user" required />
+
+          <label for="pwd">Password</label>
+          <input type="password" id="pwd" name="pwd" required />
+
+          <div id="feedback"></div>
+
+          <button
+            class="mdc-button mdc-button--raised mdc-button--leading"
+            id="submitButton"
+            type="submit"
+          >
+            <span class="mdc-button__ripple"></span>
+            <i class="material-icons mdc-button__icon" aria-hidden="true"
+              >save</i
+            >
+            <span class="mdc-button__label">Save</span>
+          </button>
+        </fieldset>
+      </form>
+    </section>
+    <br />
+    <!-------------------------------------------------------Section 2-------------------------------------->
+    <section>
+      <h1>Fees Wasted</h1>
+      <article>
+        <form id="form2">
+          <input type="checkbox" class="feeItem" id="item5" value="5.00" />
+          <label class="LabelItem" for="item5">Exam Fee ($5.00)</label>
+          <input type="checkbox" class="feeItem" id="item4" value="20.00" />
+          <label class="LabelItem" for="item4">Library Fee ($20.00)</label>
+          <input type="checkbox" class="feeItem" id="item6" value="20.00" />
+          <label class="LabelItem" for="item6">Security Fee ($20.00)</label>
+          <input type="checkbox" class="feeItem" id="item3" value="20.00" />
+          <label class="LabelItem" for="item3">Registration Fee ($20.00)</label>
+          <input type="checkbox" class="feeItem" id="item2" value="10.00" />
+          <label class="LabelItem" for="item2">Development Fee ($10.00)</label>
+          <input type="checkbox" class="feeItem" id="item1" value="165.00" />
+          <label class="LabelItem" for="item1"
+            >Computer Lab Fee ($165.00)</label
+          >
+        </form>
+        <aside>Total Cost: <span id="TotalFees">$0</span></aside>
+      </article>
+    </section>
+    <br />
+    <!-------------------------------------------------------Section 3-------------------------------------->
+    <section>
+      <h1>Reason for Program Change</h1>
+      <article id="A3">
+        <form id="form3">
+          <fieldset class="F3">
+            <legend>Course</legend>
+            <select id="course" size="4">
+              <option>Select Course</option>
+              <option>CMPS1131</option>
+              <option>CMPS2151</option>
+              <option>CMPS1111</option>
+              <option>CMPS4131</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="F3">
+            <legend>Section</legend>
+            <select id="section" size="4">
+              <option>Select Section</option>
+              <option class="CMPS1131">Section 1 - M/W: 2:00pm - 3:15pm</option>
+              <option class="CMPS1131">
+                Section 2 - T/Th: 8:00am - 9:15am
+              </option>
+              <option class="CMPS1131">Section 3 - Online</option>
+
+              <option class="CMPS2151">
+                Section 1 - M/W: 9:30am - 10:45am
+              </option>
+              <option class="CMPS2151">
+                Section 2 - M/W: 12:30pm - 1:45pm
+              </option>
+              <option class="CMPS2151">
+                Section 3 - T/Th: 2:00pm - 3:15pm
+              </option>
+              <option class="CMPS2151">Section 4 - Online</option>
+
+              <option class="CMPS1111">
+                Section 1 - T/Th: 5:30pm - 6:45pm
+              </option>
+              <option class="CMPS1111">
+                Section 2 - M/W: 9:30am - 10:45am
+              </option>
+              <option class="CMPS1111">Section 3 - M/W: 2:00pm - 3:15pm</option>
+              <option class="CMPS1111">Section 4 - Fri: 8:30am - 9:45am</option>
+              <option class="CMPS1111">Section 5 - Online</option>
+
+              <option class="CMPS4131">Section 1 - Online</option>
+              <option class="CMPS4131">
+                Section 2 - Fri: 9:30am - 10:45am
+              </option>
+              <option class="CMPS4131">
+                Section 3 - Sat: 11:00am - 12:15pm
+              </option>
+              <option class="CMPS4131">Section 4 - M/W: 8:00am - 9:15am</option>
+              <option class="CMPS4131">Section 5 - Online</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <legend>Reason</legend>
+            <select id="reason" size="4">
+              <option>Select Reason</option>
+              <option class="Section 1 - M/W: 2:00pm - 3:15pm">
+                I Give up!
+              </option>
+              <option class="Section 1 - M/W: 2:00pm - 3:15pm">
+                I Don't Understand Programming!
+              </option>
+              <option class="Section 1 - M/W: 2:00pm - 3:15pm">
+                IT is not for me!
+              </option>
+
+              <option class="Section 2 - T/Th: 8:00am - 9:15am">
+                I Failed two tests below 40%
+              </option>
+              <option class="Section 2 - T/Th: 8:00am - 9:15am">
+                I am not tough enough.
+              </option>
+              <option class="Section 2 - T/Th: 8:00am - 9:15am">
+                of personal resons.
+              </option>
+
+              <option class="Section 3 - Online">I am a wimp!</option>
+              <option class="Section 3 - Online">Don't speak Binary.</option>
+              <option class="Section 3 - Online">
+                My teacher is Awesome! I'm not worthy!
+              </option>
+              <option class="Section 3 - Online">
+                This is the best program!
+              </option>
+
+              <option class="Section 1 - M/W: 9:30am - 10:45am">
+                I Hate Computers!
+              </option>
+              <option class="Section 1 - M/W: 9:30am - 10:45am">
+                I love Facebook Too Much!
+              </option>
+              <option class="Section 1 - M/W: 9:30am - 10:45am">
+                I love instagram more!
+              </option>
+              <option class="Section 1 - M/W: 9:30am - 10:45am">
+                I have my own youtube page!
+              </option>
+
+              <option class="Section 2 - M/W: 12:30pm - 1:45pm">
+                My social life is more important!
+              </option>
+              <option class="Section 2 - M/W: 12:30pm - 1:45pm">
+                My virtual life is more interesting!
+              </option>
+              <option class="Section 2 - M/W: 12:30pm - 1:45pm">
+                I have 0 followers on instagram!
+              </option>
+              <option class="Section 2 - M/W: 12:30pm - 1:45pm">
+                Web Development is the best!
+              </option>
+
+              <option class="Section 3 - T/Th: 2:00pm - 3:15pm">
+                I can't code in web.
+              </option>
+              <option class="Section 3 - T/Th: 2:00pm - 3:15pm">
+                Web developers are best!
+              </option>
+              <option class="Section 3 - T/Th: 2:00pm - 3:15pm">
+                I have 1000 followers.
+              </option>
+
+              <option class="Section 4 - Online">
+                I have an awesome teacher!
+              </option>
+              <option class="Section 4 - Online">I am Lazy!</option>
+
+              <option class="Section 1 - T/Th: 5:30pm - 6:45pm">
+                I play too much.
+              </option>
+              <option class="Section 1 - T/Th: 5:30pm - 6:45pm">
+                I prefer the easy stuff, hardware!
+              </option>
+              <option class="Section 1 - T/Th: 5:30pm - 6:45pm">
+                I rather be an English teacher!
+              </option>
+
+              <option class="Section 2 - M/W: 9:30am - 10:45am">
+                This program is too advance.
+              </option>
+              <option class="Section 2 - M/W: 9:30am - 10:45am">
+                I cheated!
+              </option>
+
+              <option class="Section 3 - M/W: 2:00pm - 3:15pm">
+                Can I still pass with 3 zero?
+              </option>
+              <option class="Section 3 - M/W: 2:00pm - 3:15pm">
+                I will just be a politician!
+              </option>
+              <option class="Section 3 - M/W: 2:00pm - 3:15pm">
+                I don't need this degree!
+              </option>
+
+              <option class="Section 4 - Fri: 8:30am - 9:45am">
+                Readycall centers are hiring!
+              </option>
+              <option class="Section 4 - Fri: 8:30am - 9:45am">
+                I want to be rich!
+              </option>
+
+              <option class="Section 5 - Online">
+                I don't see how this will make me money!
+              </option>
+              <option class="Section 5 - Online">I should study more!</option>
+              <option class="Section 5 - Online">I need a job!</option>
+
+              <option class="Section 1 - Online">
+                My expertise is at a Call Center.
+              </option>
+              <option class="Section 1 - Online">Netflix and Chill!</option>
+              <option class="Section 1 - Online">
+                I want to be a bus driver
+              </option>
+              <option class="Section 1 - Online">
+                Robots will rule us someday!
+              </option>
+
+              <option class="Section 2 - Fri: 9:30am - 10:45am">
+                I am scared of technology.
+              </option>
+              <option class="Section 2 - Fri: 9:30am - 10:45am">
+                I want to learn French instead.
+              </option>
+              <option class="Section 2 - Fri: 9:30am - 10:45am">
+                My classmates don't share!
+              </option>
+              <option class="Section 2 - Fri: 9:30am - 10:45am">
+                I prefer sports!
+              </option>
+
+              <option class="Section 3 - Sat: 11:00am - 12:15pm">
+                I respect software developers.
+              </option>
+              <option class="Section 3 - Sat: 11:00am - 12:15pm">
+                Programming Sucks!
+              </option>
+              <option class="Section 3 - Sat: 11:00am - 12:15pm">
+                I hate design software!
+              </option>
+
+              <option class="Section 4 - M/W: 8:00am - 9:15am">
+                Robots will Rise!
+              </option>
+              <option class="Section 4 - M/W: 8:00am - 9:15am">
+                AI is the future, sadly I give up!.
+              </option>
+              <option class="Section 4 - M/W: 8:00am - 9:15am">
+                I don't know what to do with my life!
+              </option>
+              <option class="Section 4 - M/W: 8:00am - 9:15am">
+                I am young, I have plenty of time.
+              </option>
+
+              <option class="Section 5 - Online">
+                Software engineerings are awesome!
+              </option>
+              <option class="Section 5 - Online">
+                Climate change is coming so why bother!
+              </option>
+            </select>
+          </fieldset>
+
+          <input
+            type="button"
+            value="Select"
+            class="mdc-button mdc-button--raised mdc-button--leading mybttn"
+            id="dropCourse"
+          />
+          <input
+            type="button"
+            value="Submit"
+            class="mdc-button mdc-button--raised mdc-button--leading mybttn"
+            id="showRslt"
+            onclick="showResult()"
+          />
+        </form>
+        <!-- end form-->
+        <p id="output"></p>
+      </article>
+    </section>
+    <br /><br />
+
+    <footer>
+      &copy; Copyright 2024: CMPS2151-UB24-S1 index_t3.html(mmedina)
+    </footer>
+  </body>
+</html>
